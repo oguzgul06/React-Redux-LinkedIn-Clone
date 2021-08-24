@@ -20,7 +20,7 @@ function Login() {
       return alert("Please enter a full name!");
     }
 
-    auth.createUserwithEmailAndPassword(email, password).then((userAuth) => {
+    auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
       userAuth.user
         .updateProfile({
           displayName: name,
